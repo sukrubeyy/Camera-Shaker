@@ -1,2 +1,2 @@
 # Camera-Shaker
-This repository i showed how to write camera shake script. 
+In this repository I showed how to write the camera shake script
