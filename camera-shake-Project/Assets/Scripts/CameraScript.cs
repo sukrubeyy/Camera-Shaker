@@ -21,13 +21,13 @@ public class CameraScript : MonoBehaviour
     {
         Vector3 position = transform.localPosition;
         position.z = transform.localPosition.z;
-        float direction = 0f;
-        while(direction<time)
+        float timeUp = 0f;
+        while(timeUp<time)
         {
             float x = Random.Range(-1f, 1f)*force;
             float y = Random.Range(-1f, 1f)*force;
             transform.localPosition = new Vector2(x,y);
-            direction += Time.deltaTime;
+            timeUp += Time.deltaTime;
             yield return null;
         }
         transform.localPosition = position;
